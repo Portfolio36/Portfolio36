@@ -1,0 +1,135 @@
+/* #########################################################
+
+HOW TO CREATE A RESPONSIVE IMAGE SLIDER [TUTORIAL]
+
+"How to create a Responsive Image Slider [Tutorial]" was specially made for DesignModo by our friend Valeriu Timbuc.
+
+Links:
+http://vtimbuc.net
+http://designmodo.com
+http://vladimirkudinov.com
+
+######################################################### */
+
+
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.flexslider a img { outline: none; border: none; }
+.flexslider {
+	position: relative;
+	zoom: 1;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	padding-bottom:33px;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+/* Edit it if you want */
+.flex-container {
+	min-width: 150px;
+	max-width: 960px;
+}
+
+.flexslider .slides { zoom: 1; }
+
+
+.flex-direction-nav {
+	width: 100%;
+	position: absolute;
+	top: 2px;
+	height: 30px;
+	display: none;
+}
+.flex-direction-nav li {padding: 0 !important;}
+/* Direction Nav */
+.flex-direction-nav a {
+	display: block;
+	position: absolute !important;
+	width: 31px !important;
+	height: 30px !important;
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+.flex-direction-nav .flex-prev {
+	right: 50%;
+	margin-right: 160px;
+	background: url(../images/ico/prev.png) no-repeat 0 0;
+}
+.flex-direction-nav .flex-next {
+	left: 50%;
+	margin-left: 160px;
+	background: url(../images/ico/next.png) no-repeat 0 0;
+}
+/* Control Nav */
+.flexslider .flex-control-nav {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align: center;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 26px !important;
+	height: 28px !important;
+	margin: 0 3px;
+	background-image:url(../images/ico/control.png);
+	background-position: 0 0;
+	transition: all 0ms ease
+}
+.flex-control-paging li a.flex-active,
+.flex-control-paging li a.flex-active:hover {
+	background:url(../images/ico/control-active.png) no-repeat;
+}
+.flex-control-paging li a:hover {
+	background-image:url(../images/ico/control.png);
+	background-position: -27px 0;
+}

@@ -1,0 +1,101 @@
+@media (max-width:992px) {
+	.container {width:100%;}
+	.banner {height: 550px;}
+	.consultation {padding: 31px 0 57px;}
+	.consultation .title {margin-bottom: 40px;}
+	.consultation form {width: 320px; margin: 0 auto;}
+	.consultation .col {width: 100%;margin-bottom: 20px;padding: 0;}
+	.consultation label {float: none;width: 100%;}
+	.consultation input {float: none;width: 100%;}
+	.consultation .but {width: 216px;margin-top: 10px;}
+	.consultation .but.waves-block {display: inline-block;}
+	.content .text-contact .col-xs-4 {width: 41.66666667%;}
+	.content .text-contact .col-xs-8 {width: 58.33333333%;}
+}
+@media (max-width:860px) {
+	.navbar-top .logo {font-size: 36px;}
+	.navbar-top .logo span {font-size: 18px;}
+	.navbar-top .but {width: 195px;}
+}
+@media (max-width:768px) {
+	.navbar-top .logo {font-size: 35px;padding-left: 85px;}
+	.navbar-top .logo span {font-size: 17px;}
+	.advantages {margin-bottom: 0;}
+	.advantages .title {margin-bottom: 70px;}
+	.advantages-box .item {margin-bottom: 53px;}
+	.advantages-box .item.item-1 .img {float:none;width:100%;}
+	.advantages-box .item.item-1 .text-box {float:none;width:100%;}
+	.advantages-box .item.item-2 .img {float:none;width:100%;}
+	.advantages-box .item.item-2 .text-box {float:none;width:100%;}
+	.reviews .title {margin-bottom: 70px;}
+	.footer {text-align: center;}
+	.footer p {margin-bottom: 25px;}
+	.footer .fl-right {float: none;margin: 0 auto;}
+	.modal-dialog {width:auto;}
+	.content .text.column {margin-bottom: 0px;}
+	.content .text {margin-bottom: 60px;}
+	.content .mb-70 .title, .content .mb-70 h1 {margin-bottom: 60px;}
+	.content .text-contact .col-xs-4 {width: 50%;}
+	.content .text-contact .col-xs-8 {width: 50%;}
+}
+@media (max-width:767px) {
+	.navbar-top {height: auto;overflow: auto;text-align: center;}
+	.navbar-top .container {padding: 0}
+	.navbar-top .logo {float: none;width:280px;margin: 0 auto 20px;padding-left: 80px;background-position: 5px 0}
+	.navbar-top .contact {position: relative;margin: 0 auto 20px;left: 0;top: 0;}
+	.navbar-top .but {position: relative;margin: 0 auto;right: 0;}
+	.navbar-top .contact {margin-bottom: 20px;float: none;}
+	.navbar-wrapper {position: relative;}
+	#navbar {width: 100%;position: absolute;top:50px;margin:0 -15px;padding: 0;}
+	.navbar-nav {text-align: center;width: 100%;height: auto;padding: 15px 0;background: rgba(3, 30, 73, 0.8);}
+	.navbar-nav::after {display: none;}
+	.navbar-nav > li {display: block;}
+	.menu-nav {display: block;}
+	.banner {/*margin-top: -290px;*/display: none;}
+	.title, h1 {font-size: 36px;line-height: 36px;}
+	.column {column-count: 1;-moz-column-count: 1;-webkit-column-count: 1;column-gap: 0px;-moz-column-gap: 0px;-webkit-column-gap: 0px;}
+	.map {height: 500px;}
+}
+@media (max-width:620px) {
+	.title, h1 {font-size: 34px;line-height: 34px;}
+	#owl-demo .owl-prev {left:-70px;}
+	#owl-demo .owl-next {right:-70px;}
+	.modal-body {padding: 15px 60px;}
+	.modal label {float:none;width: 100%;text-align: left;}
+	.modal input {float:none;width: 100%;}
+	.modal .but {margin-top: 40px;}
+	label {float:none;width: 100%;text-align: left;}
+	input, textarea, select, .checkbox {float:none;width: 100%;}
+	.col-box .m, .col-box .null, .col-box .t, .col-box .m3 {width: 21%;}
+	form.form-grous .col-md-6 {padding:0;}
+	.col-box .null {display: none;}
+	.col-box .m3.before:before {content: "Объем:";position: absolute;left: 0;top: -38px;width: 100%;height: 38px;line-height: 38px;text-align:left;}
+	.content .text {margin-bottom: 50px;}
+	.content .mb-70 .title, .content .mb-70 h1 {margin-bottom: 50px;}
+	.map {height: 450px;}
+}
+@media (max-width:480px) {
+	.title, h1 {font-size: 32px;line-height: 32px;}
+	h2 {margin-bottom: 25px;}
+	.advantages .title {margin-bottom: 60px;}
+	.advantages-box .col-ya-12 {width: 100%;}
+	.reviews .title {margin-bottom: 60px;}
+	.modal-body {padding: 15px 40px;}
+	.modal .but {margin-top: 30px;}
+	.content .text {margin-bottom: 40px;}
+	.content .mb-70 .title, .content .mb-70 h1 {margin-bottom: 40px;}
+	.content .text-contact .col-xs-4 {width: 100%;text-align:center;}
+	.content .text-contact .col-xs-8 {width: 100%;text-align: center;}
+	.map {height: 400px;}
+}
+@media (max-width:360px) {
+	.consultation form {width: 100%; margin: 0 auto;}
+	#owl-demo .owl-prev {left:-55px;}
+	#owl-demo .owl-next {right:-55px;}
+	.modal .but {width: 100%;}
+	.map {height: 350px;}
+}
+@media (max-width:320px) {
+	.title, h1 {font-size: 28px;line-height: 28px;}
+	.map {height: 300px;}
+}

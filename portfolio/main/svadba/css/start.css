@@ -1,0 +1,250 @@
+﻿/* ==========================================================================
+   GLOBAL
+   ========================================================================== */
+*, *:after, *::before {-moz-box-sizing: border-box;box-sizing: border-box;}
+html, body {height:100%;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, 
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 125%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+	width:100%;
+	min-width:996px;
+	height:100%;
+	color: #303030;
+	font-size:16px;
+	line-height:24px;
+	font-family:'liberation', sans-serif;
+	padding:0;
+	margin:0;
+	background:#ffffff;
+	text-align: left;
+	-webkit-tap-highlight-color:transparent;
+}
+.clearfix {zoom: 1;}
+.clearfix:before,
+.clearfix:after {
+    content: ' ';
+    display: table;
+}
+.clearfix:after {clear: both;}
+.container {
+	width: 941px;
+	margin: 0 auto;
+	height: 100%;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {font-family: 'oranienbaum';font-weight: 400;}
+b, strong {font-weight: 700;}
+p {padding:0;margin: 0;}
+a {color: #EB006C;text-decoration:underline;}
+a:hover {color: #934FBE;text-decoration:none;}
+a, a:hover, .btn, .btn:hover {
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease
+}
+img, img:hover {padding:0;margin:0;border:0;}
+ol, ul, li {list-style: outside none none;}
+:focus {outline:none;}
+button {border: 0;padding: 0;}
+button::-moz-focus-inner {padding:0;border:0;}
+.line {width: 60px;height: 32px;line-height: 32px;margin: 0 auto 40px;text-align: center;position: relative;display: block;}
+.line:before, .line:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 16px;
+	left:-200px;
+	background: #fff;
+	width: 200px;
+	height: 2px;
+	background-color: #FFF;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+.line:after {left:60px;}
+.line.black:before, .line.black:after {background-color: #303030;}
+.ico {display: inline-block;vertical-align: middle;background: url(../images/ico/ico_sprite.png) no-repeat;}
+.ico.ico-line-1 {background-position: 0px 0px;width: 32px;height: 32px;}
+.ico.ico-line-2 {background-position: 0px -64px;width: 33px;height: 29px;}
+.ico.ico-line-3 {background-position: -64px 0px;width: 30px;height: 32px;}
+.ico.ico-line-4 {background-position: -33px -64px;width: 32px;height: 28px;}
+.ico.ico-line-5 {background-position: 0px -32px;width: 31px;height: 32px;}
+.ico.ico-line-6 {background-position: -31px -32px;width: 32px;height: 31px;}
+.ico.ico-line-7 {background-position: -32px 0px;width: 32px;height: 32px;}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+	position:relative;
+	z-index:5;
+	height:90px;
+	background: rgba(255,255,255,0.8);
+	font-size: 16px;
+	line-height:20px;
+}
+.header a {
+	color: #934FBE;
+	font-size: 14px;
+	text-decoration: none;
+	border-bottom: 1px dotted #934FBE;
+}
+.header a:hover {
+	color: #EB006C;
+	text-decoration: none;
+	border-bottom:none;
+}
+.header .logo {
+	display: block;
+	position:absolute;
+	left:50%;
+	top:20px;
+	width:200px;
+	height:48px;
+	margin-left:-100px;
+	background:url('../images/logo.png') no-repeat;
+	text-decoration: none;
+	border-bottom: none;
+}
+.header .header-left {float: left;width: 40%;padding: 30px 0 10px;}
+.header .header-left .text {float: left;width: 59%;text-align: right;}
+.header .header-left .nav-languages {
+	position: relative;
+	float: right;
+	width: 26%;
+	text-transform: uppercase;
+}
+.header .header-left .nav-languages a {
+	color: #303030;
+	font-size: 16px;
+	line-height: 22px;
+	text-decoration: none;
+	border-bottom: none;
+}
+.header .header-left .nav-toggle {
+	float: left;
+	width: 40%;
+	cursor: pointer;
+}
+.header .header-left .nav-toggle:after {
+	content: "";
+	position:relative;
+	right: 0;
+	border: 4px solid transparent; 
+	border-top: 4px solid #303030;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+.header .header-left .nav-languages .nav {
+	display:none;
+	position:absolute;
+	left: 0;
+	top: 20px;
+}
+.header .header-right {float: right;width: 35%;padding: 30px 0 10px;}
+.header .header-right .text {float: left;width: 75%;padding-left: 108px;}
+.header .header-right .social {float: left;width: 25%;padding: 2px 0 0 41px;}
+.header .header-right .social li {display:inline-block;margin: 0px;}
+.header .header-right .social li a, 
+.header .header-right .social li a:hover {transition: all 0ms ease !important;text-decoration: none;border-bottom: none;}
+.header .header-right .social .ico {display:block;width: 15px;height: 15px;background: url(../images/ico/h_ico_sprite.png);}
+.header .header-right .social .ico.ico-in {background-position: 0px 0px;}
+.header .header-right .social .ico.ico-fb {background-position: -15px 0px;}
+.header .header-right .social .ico.ico-in:hover {background-position: 0px -20px;}
+.header .header-right .social .ico.ico-fb:hover {background-position: -15px -20px;}
+
+.welcome {
+	width: 100%;
+	position:relative;
+	height:100%;
+	min-height:650px;
+	/*max-height:1200px;*/
+	margin:-90px 0 0;
+	background-size:cover;
+	background-position: bottom center;
+}
+.welcome .welcome-bg {
+	background: rgba(0,0,0,0.4);
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height: 100%;
+}
+.welcome .welcome-text {
+	position:absolute;
+	left:50%;
+	bottom:50%;
+	width:640px;
+	height: 320px;
+	margin:0 0 -180px -320px;
+	text-align: center;
+	color: #FFFEFE;
+}
+.welcome h1 {font-size:65px;line-height:75px;padding:0;margin:0 0 16px;}
+.welcome h2 {font-size: 35px;line-height:45px;margin:0 auto 28px;width: 58%;}
+.welcome .line {margin-bottom: 16px;}
+.welcome .scroll {
+	width: 20px;
+	height: 59px;
+	position: absolute;
+	left: 50%;
+	bottom:65px;
+	margin-left: -10px;
+	background: none;
+	cursor: pointer;
+}
+.welcome .scroll:before {
+	content: "";
+	width: 20px;
+	height: 59px;
+	background: url(../images/ico/scroll.png) no-repeat;
+	display:block;
+}
+/* ==========================================================================
+   ELEMENTS
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  position: relative;
+  font:400 16px/44px 'liberation', sans-serif;
+  text-align:center;
+  width:auto;
+  height: 44px;
+  margin: 0 auto;
+  outline:none;
+  cursor:pointer;
+  -webkit-appearance: none;
+  color: #FEFEFF;
+  background-color: #EB006C;
+  border:none;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -khtml-border-radius:5px;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 0 30px;
+  overflow: hidden;
+}
+.btn:hover {
+  color: #FEFEFF;
+  background-color: #6C3B8B;
+  outline:none;
+  opacity: 1;
+}
+.btn:active {
+  top: 2px;
+}

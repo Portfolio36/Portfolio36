@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'liberation';
+    src: url('liberation/liberationsans-webfont.bin');
+    src: url('liberation/liberationsans-webfont-1.bin') format('embedded-opentype'),
+         url('liberation/liberationsans-webfont-2.bin') format('woff'),
+         url('liberation/liberationsans-webfont-3.bin') format('truetype'),
+         url('liberation/liberationsans-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberation';
+    src: url('liberation/liberationsansbold-webfont.bin');
+    src: url('liberation/liberationsansbold-webfont-1.bin') format('embedded-opentype'),
+         url('liberation/liberationsansbold-webfont-2.bin') format('woff'),
+         url('liberation/liberationsansbold-webfont-3.bin') format('truetype'),
+         url('liberation/liberationsansbold-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberation';
+    src: url('liberation/liberationsansbolditalic-webfont.bin');
+    src: url('liberation/liberationsansbolditalic-webfont-1.bin') format('embedded-opentype'),
+         url('liberation/liberationsansbolditalic-webfont-2.bin') format('woff'),
+         url('liberation/liberationsansbolditalic-webfont-3.bin') format('truetype'),
+         url('liberation/liberationsansbolditalic-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'liberation';
+    src: url('liberation/liberationsansitalic-webfont.bin');
+    src: url('liberation/liberationsansitalic-webfont-1.bin') format('embedded-opentype'),
+         url('liberation/liberationsansitalic-webfont-2.bin') format('woff'),
+         url('liberation/liberationsansitalic-webfont-3.bin') format('truetype'),
+         url('liberation/liberationsansitalic-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'oranienbaum';
+    src: url('oranienbaum/oranienbaum-webfont.bin');
+    src: url('oranienbaum/oranienbaum-webfont-1.bin') format('embedded-opentype'),
+         url('oranienbaum/oranienbaum-webfont-2.bin') format('woff'),
+         url('oranienbaum/oranienbaum-webfont-3.bin') format('truetype'),
+         url('oranienbaum/oranienbaum-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

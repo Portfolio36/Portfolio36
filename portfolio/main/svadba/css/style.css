@@ -1,0 +1,545 @@
+.h4 {font-size: 50px;line-height: 60px;margin-bottom: 23px;}
+.h5 {font-size: 35px;line-height: 35px;margin-bottom: 23px;}
+.h6 {font-size: 25px;line-height: 35px;margin-bottom: 23px;}
+blockquote {position: relative;padding: 0 40px;width: 85%;margin: 0 auto 10px;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after {
+    content: "";
+    color: #CACACA;
+    display: block;
+    width: 25px;
+    height: 21px;
+    position: absolute;
+}
+blockquote:before {
+	background: url(../images/ico/blockquote_before.png) no-repeat;
+    top: -4px;
+    left: 5px;
+}
+blockquote:after {
+    background: url(../images/ico/blockquote_after.png) no-repeat;
+    bottom: -4px;
+    right: 5px;
+}
+/* ==========================================================================
+   WEDDING
+   ========================================================================== */
+.wedding {
+	padding: 71px 0 78px;
+	text-align: center;
+	background-image: url(../images/bg/wedding.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.wedding .flexslider .slides {margin: 0 -10px}
+.wedding .flexslider .slides a {
+    width: 300px;
+    height: 200px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px 20px;
+    color: #FEFEFF;
+    text-decoration: none;
+}
+.wedding .flexslider .slides a img {min-height: 200px;}
+.wedding .flexslider .slides .overlay {
+	opacity: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.6);
+	-webkit-transition:all 0.3s ease-out 0s;
+	-moz-transition:all 0.3s ease-out 0s;
+	-o-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+}
+.wedding .flexslider .slides .border {
+	opacity: 0;
+	display: block;
+	width: 260px;
+	height: 160px;
+	position: absolute;
+	top:20px;
+	left:20px;
+	border: 2px solid #FFF;
+	-webkit-transition:all 0.3s ease-out 0s;
+	-moz-transition:all 0.3s ease-out 0s;
+	-o-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+}
+.wedding .flexslider .slides .zoom-icon {
+	background: url(../images/ico/zoom-in.png);
+	width:33px;
+	height:33px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-16px;
+	margin-top:-16px;
+	opacity:0;
+	-moz-transform: scale(5);
+	-webkit-transform: scale(5);
+	-o-transform: scale(5);
+	-ms-transform: scale(5);
+	transform: scale(5);
+	-webkit-transition:all 0.3s ease-out 0s;
+	-moz-transition:all 0.3s ease-out 0s;
+	-o-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+}
+.wedding .flexslider .slides a:hover .overlay {opacity:1;}
+.wedding .flexslider .slides a:hover .border {opacity:1;}
+.wedding .flexslider .slides a:hover .zoom-icon{
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity:1;
+}
+.wedding .flexslider .slides .video-overlay {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.wedding .flexslider .slides .video-border {
+	display: block;
+	width: 260px;
+	height: 160px;
+	position: absolute;
+	top:20px;
+	left:20px;
+	border: 2px solid #CD025F;
+	-webkit-transition:all 0.3s ease-out 0s;
+	-moz-transition:all 0.3s ease-out 0s;
+	-o-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+}
+.wedding .flexslider .slides .video-play,
+.wedding .flexslider .slides .video-play-hover {
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:47px;
+	left:50%;
+	margin-left:-25px;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease
+}
+.wedding .flexslider .slides .video-play {opacity: 1;background: url(../images/ico/play.png) no-repeat;}
+.wedding .flexslider .slides .video-play-hover {opacity: 0;background: url(../images/ico/play_hover.png) no-repeat;}
+.wedding .flexslider .slides a:hover .video-border {border: 2px solid #fff;}
+.wedding .flexslider .slides a:hover .video-play-hover {opacity: 1;}
+.wedding .flexslider .slides a:hover .video-play {opacity:0;}
+.wedding .flexslider .slides .video-text {
+	position: absolute;
+	top: 54%;
+	left:50%;
+	width: 80%;
+	margin-left: -40%;
+	color: #FEFEFF;
+}
+/* ==========================================================================
+   services
+   ========================================================================== */
+.services {
+	padding: 71px 0 51px;
+	text-align: center;
+	background:#fff;
+}
+.services .services-box {overflow: hidden;margin-bottom: 10px;}
+.services .services-box ul {margin: 0 -10px;}
+.services .services-box ul li {
+	width: 300px;
+    display:inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 0 8px 20px;
+}
+.services .services-box .img {
+	display: block;
+	width: 300px;
+	height: 130px;
+	overflow: hidden;
+	margin-bottom: 13px;
+}
+.services .services-box .img img {min-height: 130px;}
+.services .services-box .h3 {
+	display: block;
+	color: #934FBE;
+	font-size: 25px;
+	line-height: 35px;
+	height: 35px;
+	margin-bottom: 4px;
+}
+.services .services-box p {margin-bottom: 16px;}
+.services .commission {
+	width: 100%;
+	min-height: 140px;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.services .commission .box-ico {
+	width: 140px;
+	height: 140px;
+	background: url(../images/ico/ico-commission.png) no-repeat;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	margin-left: -70px;
+	margin-top: -70px;
+}
+.services .commission .box-left {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding-right: 90px;
+	padding-top: 5px;
+}
+.services .commission .box-right {
+	width: 50%;
+	float: right;
+	text-align: left;
+	padding-left: 90px;
+	padding-top: 5px;
+}
+/* ==========================================================================
+   ORDER
+   ========================================================================== */
+.order {padding: 43px 0 24px;text-align: center;background-color: #E3DEEA;}
+.order .h6 {margin-bottom: 20px;}
+.order .col {float: left;width:240px;margin-right: 19px;}
+.order form {margin-bottom: 15px;}
+.order p {margin-bottom: 11px;}
+/* ==========================================================================
+   ADVANTAGES
+   ========================================================================== */
+.advantages {
+	background-image: url(../images/bg/advantages.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 69px 0 57px;
+	text-align: center;
+	color: #fff;
+}
+.advantages .line {margin-bottom: 33px;}
+.advantages .advantages-box {overflow: hidden;}
+.advantages .advantages-box ul {margin: 0 -20px;}
+.advantages .advantages-box li {
+	width: 440px;
+	margin: 0 20px;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 30px;
+}
+.advantages .advantages-box .h6 {
+	display: block;
+	color: #C9BDFF;
+	margin-bottom: 5px;
+}
+.advantages .advantages-box p {margin-bottom: 0;}
+/* ==========================================================================
+   COUPLE
+   ========================================================================== */
+.couple {
+	padding: 71px 0 78px;
+	text-align: center;
+	background:#fff;
+}
+.couple .text-top {
+	width: 100%;
+	min-height: 140px;
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.couple .text-top .box-avatar {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -70px;
+	margin-left: -70px;
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -khtml-border-radius:50%;
+}
+.couple .text-top .box-left {
+	width: 50%;
+	float: left;
+	text-align: right;
+	padding-right: 90px;
+	padding-left: 200px;
+}
+.couple .text-top .box-right {
+	width: 50%;
+	float: right;
+	text-align: left;
+	padding-left: 90px;
+	padding-right: 160px;
+	color: #888;
+}
+.couple blockquote p {max-height:96px;overflow: hidden;margin: 0}
+.couple .text-bottom {margin-bottom: 19px;}
+.couple .text-bottom a {text-decoration: none;border-bottom: 1px dotted #EB006C;}
+.couple .text-bottom a:hover {text-decoration: none;border-bottom:none;}
+/* ==========================================================================
+   BOOK-WEDDING
+   ========================================================================== */
+.book-wedding {
+	background-image: url(../images/bg/book-wedding.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 73px 0 100px;
+	text-align: center;
+}
+.book-wedding .line {margin-bottom: 37px;}
+.book-wedding .box {width: 340px;margin: 0 auto;}
+.book-wedding .h6 {color: #EB006C;padding: 0 25px;margin-bottom: 35px;}
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+.contact {
+	background:#fff;
+	padding: 73px 0 75px;
+	text-align: center;
+}
+.contact .line {margin-bottom: 34px;}
+.contact .box {width: 420px;margin: 0 auto;}
+.contact span {display: block;color: #888;margin-bottom: 2px;}
+.contact .h6 {margin-bottom: 0px;}
+.contact .h5 {margin-bottom: 33px;line-height: 45px;}
+.contact .phone {margin-bottom: 23px;}
+/* ==========================================================================
+    FOOTER
+   ========================================================================== */
+.footer {
+	background-color: #4C3958;
+	padding: 12px 0 15px;
+	color: #FFF;
+	font-size: 14px;
+}
+.footer a {
+	color: #934FBE;
+	font-size: 14px;
+	text-decoration: none;
+	border-bottom: 1px dotted #934FBE;
+}
+.footer a:hover {
+	color: #EB006C;
+	text-decoration: none;
+	border-bottom:none;
+}
+.footer p {margin-bottom: 0;}
+.footer .left {float: left;width: 50%;}
+.footer .right {float: right;width: 50%;}
+.footer .right .text {float:left;width: 80%;}
+.footer .right .social {float:left;width: 20%;text-align: right;}
+.footer .right .social li {display:inline-block;margin: 0px 0 0 5px;}
+.footer .right .social li a, 
+.footer .right .social li a:hover {transition: all 0ms ease !important;text-decoration: none;border-bottom: none;}
+.footer .right .social .ico {display:block;width: 26px;height: 26px;background: url(../images/ico/f_ico_sprite.png);}
+.footer .right .social .ico.ico-in {background-position: 0px 0px;}
+.footer .right .social .ico.ico-fb {background-position: -31px 0px;}
+.footer .right .social .ico.ico-in:hover {background-position: 0px -31px;}
+.footer .right .social .ico.ico-fb:hover {background-position: -31px -31px;}
+/* ==========================================================================
+   MODAL
+   ========================================================================== */
+.modal {height:100%;text-align: center;}
+.modal .modal-top, .modal .modal-bottom {height: 40px;margin: 0 40px;position: relative;} 
+.modal-bg {background-color: #fff;zoom: 1;padding: 1px 0;} 
+.modal .modal_content {
+    margin: -40px 0;
+    padding: 34px 60px 37px;
+    position: relative;
+    zoom: 1;
+    z-index: 2;
+} 
+.modal.modal-ok .modal_content {padding: 34px 95px 44px;} 
+.modal.modal-ok .h2 {width:270px;margin: 0 auto 17px;}
+.modal .modal-top, .modal .modal-bottom {background-color: #fff;}
+.modal .modal-top .left, .modal .modal-top .right, 
+.modal .modal-bottom .left, .modal .modal-bottom .right {
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    top: 0;
+    background-image: url(../images/ico/modal_sprite.png);
+} 
+.modal .modal-top .left {background-position: 0px -40px;left: -40px;} 
+.modal .modal-top .right {background-position: -40px -40px;right: -40px;} 
+.modal .modal-bottom .left {background-position: 0px 0px;left:-40px;} 
+.modal .modal-bottom .right {background-position: -40px 0px;right: -40px;} 
+
+.modal .h2 {
+	color: #303030;
+	font-size: 35px;
+	line-height: 45px;
+	margin-bottom: 24px;
+}
+.modal p {color: #303030;font-size: 18px;line-height: 28px;}
+.modal p.text {width: 390px;margin: 0 auto;}
+.modal p.style {color: #888;font-size: 16px;line-height: 24px;margin-bottom: 31px;}
+.modal blockquote {width: 100%;padding: 0 50px;margin: 0 auto 24px;}
+#modal-reviews.modal .h2 {margin-bottom: 12px;}
+#modal-reviews.modal .modal_content {padding: 34px 30px 37px;}
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+form p {
+	position:relative;
+	font-size:16px;
+	line-height:1px !important;
+	margin:0 0 20px;
+}
+input, select, textarea {
+	width:100%;
+	height: 44px;
+	color: #303030;
+	font:400 16px/16px 'liberation';
+	padding:9px 18px 9px;
+	margin:0;
+	background:#ffffff;
+	border: 1px solid #D0C9D9;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+select {
+	color:#999;
+	font-weight:normal;
+	padding:9px 18px 9px;
+}
+select.done {
+	color: #303030;
+	font-weight:500;
+}
+select:hover {
+	padding:9px 13px 9px !important;
+	border:2px solid #934FBE;
+}
+select:focus {
+	padding:9px 13px 9px !important;
+	border:2px solid #934FBE !important;
+}
+select option[disabled] {
+	display:none;
+}
+select option {
+	color: #303030;
+}
+select option:hover {
+	color: #999;
+	background:#e9e9e9;
+}
+textarea {
+	line-height: 24px;
+	height:114px;
+	overflow:auto;
+	margin:0;
+	resize: none; /*запрет изменения размера поля*/
+}
+form p:hover input, form p:hover textarea {
+	padding:9px 18px 9px;
+	border: 2px solid #934FBE;
+}
+form p.focus input, form p.focus textarea {
+	padding:9px 18px 9px;
+	border: 2px solid #934FBE;
+}
+form p.error input, form p.error textarea {
+	border-color:red;
+}
+::-webkit-input-placeholder  {color: #999;opacity: 1;}
+:-moz-placeholder {color: #999;opacity: 1;}
+::-moz-placeholder {color: #999;opacity: 1;}
+:-ms-input-placeholder {color: #999;opacity: 1;}
+.warning-i {
+	position:relative;
+	display:block;
+	font-weight:normal;
+}
+.warning-i em {
+	position:absolute;
+	display:block;
+	z-index:2;
+}
+.warning-i em.icon {
+	right:0;
+	top:0;
+	display:block;
+	width:50px;
+	height:100%;
+	background:#EB006C url('../images/ico/warning-icon.png') no-repeat center 14px;
+	-moz-border-radius: 0 2px 2px 0;
+	-webkit-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+}
+.warning-i:hover input, .warning-i:hover textarea {border: 1px solid #D0C9D9;}
+.warning-i em.text {
+	position:absolute;
+	right:50px;
+	top:0;
+	display:block;
+	width:calc(100% - 50px);
+	height:calc(100%);
+	color:#ffffff;
+	font-size:16px;
+	line-height:24px;
+	font-style:normal;
+	text-align:left;
+	white-space:nowrap;
+	padding:9px 18px;
+	background: #EB006C;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+	-moz-border-radius: 2px 0 0 2px;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+}
+.warning-i em.text > em {
+	display:block;
+	font-style:normal;
+}
+.warning-i em.text.hide {
+	color:transparent;
+	width:0;
+	padding:9px 0;
+}

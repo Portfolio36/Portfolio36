@@ -1,0 +1,83 @@
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2017 Skype: moireceptik;
+ * Licensed under  ()
+ */
+.owl-carousel {margin-bottom: 0px;padding: 0 100px;}
+.owl-carousel .item{
+    -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.owl-carousel .item a {display: block;}
+.owl-carousel .item:hover {transform: scale(1.1);-webkit-transform: scale(1.1);}
+.owl-carousel .item img {width: auto;margin: 0 auto;}
+.owl-carousel .owl-nav {position: absolute;top: 50%;left: 0;z-index: 1;width: 100%;}
+.owl-carousel .owl-prev, .owl-carousel .owl-next {margin-top: -20px;position: absolute;top: 0;}
+.owl-carousel .owl-prev {left: 0;}
+.owl-carousel .owl-next {right: 0;}
+.owl-carousel .owl-nav [class*="owl-"] {
+    width: 40px;
+    height: 40px;
+    display:block;
+    cursor: pointer;
+}
+.owl-carousel .owl-nav .owl-prev:before,
+.owl-carousel .owl-nav .owl-next:before {
+    content: "";
+    background: url(owl-controls.png) no-repeat 0 0;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+}
+.owl-carousel .owl-nav .owl-prev:before {
+    left: 0;
+}
+.owl-carousel .owl-nav .owl-next:before {
+    background-position: -15px 0;
+    right: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover:before {
+    background-position: 0 -21px;
+}
+
+.owl-carousel .owl-nav .owl-next:hover:before {
+    background-position: -15px -21px;
+}
+
+.owl-carousel .owl-dots {text-align: center;}
+.owl-carousel .owl-dots .owl-dot {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #DBE4EB;
+    margin: 0 15px;
+    border-radius: 50%;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+.owl-carousel .owl-dots .owl-dot.active,
+.owl-carousel .owl-dots .owl-dot:hover {background-color: #80909C;} 
+
+@media screen and (max-width: 991px) {
+    .owl-carousel {margin-bottom: 0px;padding: 0 80px;}
+}   
+
+@media screen and (max-width: 767px) {
+    .owl-carousel {margin-bottom: 0px;padding: 0 60px;}
+}   
+
+@media screen and (max-width: 575px) {
+    .owl-carousel {margin-bottom: 0px;padding: 0 40px;}
+}   
